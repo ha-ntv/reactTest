@@ -52,13 +52,13 @@ export default function RegisterPage() {
                     <div className="col-lg-4 mx-auto">
                         <div className="auth-form-light text-left py-5 px-4 px-sm-5">
                             <Logo {...headlinesProps} />
-                            <form
+                            <form id="register-form"
                                 onSubmit={onSubmit}
                                 >
                                 <Input  {...userNameProps} errors={errors} register={register} />
                                 <Input  {...emailProps} errors={errors}  register={register} />
                                 <Input  register={register} {...passwordProps} errors={errors}  />
-                                <Button text="SIGN UP" />
+                                <Button text="SIGN UP" id="submit" />
                                 <div className="mb-4">
                                     <Checkbox {...policyCheckbox}  register={register} />
                                 </div>

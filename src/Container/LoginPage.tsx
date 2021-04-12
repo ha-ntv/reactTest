@@ -82,12 +82,12 @@ export default function LoginPage() {
                     <div className="col-lg-4 mx-auto">
                         <div className="auth-form-light text-left py-5 px-4 px-sm-5">
                             <Logo {...headlinesProps} />
-                            <form
+                            <form id="login-form"
                                 onSubmit={onSubmit}
                                 >
                                 <Input  {...userNameProps} errors={errors} register={register}/>
                                 <Input  register={register} {...passwordProps} errors={errors} />
-                                <Button text="SIGN IN" />
+                                <Button text="SIGN IN" id="submit" />
                                 <div className="my-2 d-flex justify-content-between align-items-center">
                                     <Checkbox {...rememberCheckbox}  register={register}/>
                                     <Link to="/forgot" className="auth-link text-black">Forgot password?</Link>
